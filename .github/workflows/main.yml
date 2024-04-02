@@ -34,4 +34,6 @@ jobs:
       #   ECR_REPOSITORY: lesson-086
       #   IMAGE_TAG: ${{ steps.increment-git-tag.outputs.git-tag }}
       run: |
-        docker build -t lms:v1 .
+        docker login --username kirubha2020 --password Kirubha10#
+        docker build -t kirubha2020/lms:v1 .
+        docker push kirubha2020/lms:v1
